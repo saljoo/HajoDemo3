@@ -17,7 +17,7 @@ public class Hub extends Thread {
 
     public Hub() {
         // Create 5 lights (ids 0-4) for testing
-        for (int i = 0; i < 100; i++) {
+        for (int i = 0; i < 5; i++) {
             addLight(i);
         }
         this.setDaemon(true);
