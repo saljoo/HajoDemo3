@@ -12,7 +12,7 @@ public class Client {
         PrintWriter output = null;
         try (Socket s = new Socket(InetAddress.getLocalHost(), 2345)){
             output = new PrintWriter(s.getOutputStream(), true);
-            output.print("LIGHT;QUERY\n");
+            output.print("LIGHT;ON;4\n");
             output.flush();
         } catch (UnknownHostException e) {
             e.printStackTrace();

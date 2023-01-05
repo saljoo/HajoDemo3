@@ -17,13 +17,11 @@ public class Client {
             output = new PrintWriter(s.getOutputStream(), true);
             input = new BufferedReader(new InputStreamReader(s.getInputStream()));
                 output.println("Hello");
-                output.flush();
                 String serverMessage = "";
                 while(!serverMessage.equals("Ack")){
                     serverMessage = input.readLine();
                     if(serverMessage.equals("Ack")){
                         output.println("quit");
-                        output.flush();
                         output.close();
                     }
                 }
