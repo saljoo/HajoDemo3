@@ -1,3 +1,5 @@
+School exercise on using sockets to create servers and clients.
+
 # Hajautetut järjestelmät demonstraatiokerta 3
 
 ## Demotehtäväpohjan käyttö
